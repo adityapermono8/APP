@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tragedy Threads</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="brand">
+            <a href="index.html">
+                <img src="assets/icons/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="icon-for-user">
+            <a href="#"><img src="assets/icons/search.svg" alt="Search"></a>
+            <a href="#"><img src="assets/icons/person.svg" alt="User"></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! If you have any questions, feedback, or inquiries, please get in touch with us using the form below.</p>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tragedy Threads. All rights reserved.</p>
+    </footer>
+</body>
+</html>
