@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Tragedy Threads</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="brand">
+            <a href="index.html">
+                <img src="assets/icons/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="icon-for-user">
+            <a href="#"><img src="assets/icons/search.svg" alt="Search"></a>
+            <a href="#"><img src="assets/icons/person.svg" alt="User"></a>
+        </div>
+    </nav>
+
+    <div class="shop-container">
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" data-category="all">All</a></li>
+                    <li><a href="#" data-category="TEE">TEE</a></li>
+                    <li><a href="#" data-category="HOODIE">HOODIE</a></li>
+                </ul>
+            </div>
+            <div class="price-filter">
+                <h3>Price</h3>
+                <input type="range" min="0" max="549000" value="0" id="priceRange">
+                <div>
+                    <label for="minPrice">Minimum Price</label>
+                    <input type="number" id="minPrice" value="0">
+                </div>
+                <div>
+                    <label for="maxPrice">Maximum Price</label>
+                    <input type="number" id="maxPrice" value="549000">
+                </div>
+                <button>Apply</button>
+            </div>
+        </aside>
+
+        <main class="product-list">
+            <div class="sort-options">
+                <label for="sort">Sort products by</label>
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+            </div>
+
+            <div class="products">
+                <!-- TEE Product Cards -->
+                <div class="product-card out-of-stock" data-category="TEE">
+                    <img src="assets/images/prod1.png" alt="TEE1">
+                    <div class="product-info">
+                        <p class="status">Out of Stock</p>
+                        <p class="name">Kontrakan Broken</p>
+                        <p class="price">Rp 199,000</p>
+                        <p class="rating">★ 4.93</p>
+                    </div>
+                </div>
+                <div class="product-card out-of-stock" data-category="TEE">
+                    <img src="assets/images/prod2.png" alt="TEE2">
+                    <div class="product-info">
+                        <p class="status">Out of Stock</p>
+                        <p class="name">Kontrakan Broken</p>
+                        <p class="price">Rp 199,000</p>
+                        <p class="rating">★ 4.93</p>
+                    </div>
+                </div>
+                
+                <!-- HOODIE Product Cards -->
+                <div class="product-card out-of-stock hidden" data-category="HOODIE">
+                    <img src="assets/images/prod3.png" alt="HOODIE1">
+                    <div class="product-info">
+                        <p class="status">Out of Stock</p>
+                        <p class="name">Kontrakan Broken</p>
+                        <p class="price">Rp 199,000</p>
+                        <p class="rating">★ 4.93</p>
+                    </div>
+                </div>
+                <div class="product-card out-of-stock hidden" data-category="HOODIE">
+                    <img src="assets/images/prod4.png" alt="HOODIE2">
+                    <div class="product-info">
+                        <p class="status">Out of Stock</p>
+                        <p class="name">Kontrakan Broken</p>
+                        <p class="price">Rp 200,000</p>
+                        <p class="rating">★ 4.93</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script/shop.js"></script>
+</body>
+</html>

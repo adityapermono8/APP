@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+}
+
+.links li {
+    margin: 0 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.icon-for-user a {
+    margin: 0 0.5rem;
+}
+
+.shop-container {
+    display: flex;
+    margin: 2rem;
+}
+
+.sidebar {
+    flex: 1;
+    padding-right: 2rem;
+    border-right: 1px solid #ddd;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.categories h3,
+.price-filter h3 {
+    margin-bottom: 1rem;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 0.5rem;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+}
+
+.price-filter input,
+.price-filter div {
+    margin-bottom: 1rem;
+}
+
+.price-filter input[type="range"] {
+    width: 100%;
+}
+
+.price-filter button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-list {
+    flex: 3;
+    padding-left: 2rem;
+}
+
+.sort-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.sort-options label {
+    margin-right: 1rem;
+    font-size: 16px;
+}
+
+.sort-options select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.product-card {
+    flex: 1 1 calc(33.333% - 2rem);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-info .status {
+    background-color: #f00;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.product-info .name {
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+
+.product-info .price {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-info .rating {
+    font-size: 14px;
+    color: #888;
+}
+
+.hidden {
+    display: none;
+}
